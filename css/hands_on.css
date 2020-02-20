@@ -1,0 +1,103 @@
+/*      Misty Folmsbee
+        2-20-2020
+        CS 125H-Term Project-CSS
+        Lab 5
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: white
+}
+body { 
+    color : black; 
+    font-family : Arial, Helvetica, sans-serif; 
+    font-size : 100%;
+    width: 800px;
+    background-color: beige;
+    margin: auto;
+    padding: 15px 1.5em;
+    
+}
+a:focus, a:hover { 
+    font-style:  italic; 
+    color: #e79054;
+}
+.shadow {text-shadow: 2px 2px 2px #BF9E93;}
+
+
+header{
+    border-bottom: 3px;
+    border-bottom-color: #568ba1;
+    padding: 1em 0;
+    background-image: linear-gradient(30deg, #568ba1 0%, #96a6a3 40%, white 50%, #568ba1 80%, #96a6a3 100% )
+}
+header h1 {
+    font-size: 300%;
+    text-align: center;
+    color: #666f6c;
+    padding: 1em 1em;
+}
+header img { 
+    width: 30%;
+    float: left;
+    padding: 1em;
+} 
+main {
+    clear: left;
+}
+/*main:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+
+section {
+    border-right: 3px solid #568ba1;
+    width: 50%;
+    float: left;
+    margin: 0 1.5%;
+   
+}
+section h2, h3 {color: green;
+        padding-bottom: .25em;
+        font-size: 175%; 
+        text-indent: .5em;
+}
+
+
+
+article p { padding-bottom: .5em;}
+article ul { padding-bottom: .25em; padding-left: 1.25em;}
+article li { padding-bottom: .35em;}
+
+
+aside {width: 40%;
+        float: right;
+        margin: 0 1.5%;
+}
+aside p {
+    font-size: 1em; 
+    line-height: 1.4em;
+    padding-bottom: .25em;
+}
+
+aside h3 {
+    color: green;
+    padding-bottom: .25em;
+    font-size: 175%; 
+    text-indent: .5em;
+}
+footer {
+    clear: both;
+}
+
+footer p { 
+    text-align: center;
+}
+#copyright {font-size: 60%;
+}
+ 
