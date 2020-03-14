@@ -1,7 +1,7 @@
 /*      Misty Folmsbee
-        2-20-2020
+        3-6-2020
         CS 125H-Term Project-CSS
-        Lab 5
+        Lab 8
 */
 
 * {
@@ -9,90 +9,148 @@
     padding: 0;
 }
 html {
-    background-color: white
+    background-color: white;
 }
 body { 
     color : black; 
     font-family : Arial, Helvetica, sans-serif; 
     font-size : 100%;
-    width: 800px;
+    width: 80%;
+    max-width: 800px;
     background-color: beige;
-    margin: auto;
-    padding: 15px 1.5em;
-    
+    margin: 0 auto;
+    border: 2px solid #568ba1;
 }
 a:focus, a:hover { 
     font-style:  italic; 
     color: #e79054;
 }
-.shadow {text-shadow: 2px 2px 2px #BF9E93;}
-
-
+.shadow {
+    color: green;
+    text-shadow: 2px 2px 2px #BF9E93;
+}
+img { 
+    border: 2px black;
+    padding: .25em;}
+h2,h3 {
+    color: green;
+    margin: 1em 0;
+}
+h2 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.3em;
+}
+p {
+    font-size: 1em;
+    line-height: 1.3em;
+    margin-bottom: .5em;
+}
 header{
-    border-bottom: 3px;
-    border-bottom-color: #568ba1;
+    border-bottom: 5px dashed #568ba1;
     padding: 1em 0;
     background-image: linear-gradient(30deg, #568ba1 0%, #96a6a3 40%, white 50%, #568ba1 80%, #96a6a3 100% )
 }
 header h1 {
-    font-size: 300%;
+    font-size: 200%;
     text-align: center;
-    color: #666f6c;
-    padding: 1em 1em;
+    color: black;
+    padding: 1em;
 }
 header img { 
     width: 30%;
     float: left;
     padding: 1em;
-} 
+    border: none;
+}
+nav {
+    background-color: #568ba1;
+    padding: 1em o;
+    min-height: 1em;
+}
+    
+nav ul {
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+}
+
+nav ul li {
+    float: left;
+    width: 33.33%;
+}
+nav ul li a {
+    text-align: center;
+    display: block;
+    /*width: 160px;*/
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+nav ul li a.current {
+    color: darkgreen;
+}
 main {
     clear: left;
 }
-/*main:after {
-    content: "";
-    display: table;
-    clear: both;
-}*/
-
 
 section {
     border-right: 3px solid #568ba1;
-    width: 50%;
+    padding: 0 1em;
+    width: 60%;
     float: left;
-    margin: 0 1.5%;
-   
 }
-section h2, h3 {color: green;
-        padding-bottom: .25em;
-        font-size: 175%; 
-        text-indent: .5em;
+section ul {
+    margin-left: 1em;
 }
-
-
-
-article p { padding-bottom: .5em;}
-article ul { padding-bottom: .25em; padding-left: 1.25em;}
-article li { padding-bottom: .35em;}
-
-
-aside {width: 40%;
-        float: right;
-        margin: 0 1.5%;
+section ul li {
+    margin-bottom: 1em;
+    padding-left: .5em;
+    line-height: 1.3em;
 }
-aside p {
-    font-size: 1em; 
-    line-height: 1.4em;
-    padding-bottom: .25em;
+img {   
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+table {
+    font-family: arial, sans-serif;
+    color: #568ba1;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-aside h3 {
-    color: green;
-    padding-bottom: .25em;
-    font-size: 175%; 
-    text-indent: .5em;
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+article {   
+    padding: 1em;
+    border-top: 2px solid #568ba1;
+}
+aside {
+    width: 33%;
+    float: right;
+    padding: .25em;
+}
+
+aside img {
+    width: 50%;
+    height: auto;
+    float: right;
+    margin: .5em;
+}
+
 footer {
     clear: both;
+    border-top: 2px double #568ba1;
+    background-color: #568ba1;
 }
 
 footer p { 
